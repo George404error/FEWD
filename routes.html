@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock climbing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/routes.js"></script>
+</head>
+
+<body>
+    <header class="HeaderFormatting">
+        <section id="routesMenu" class="menu">
+            <section class="MenuToggle">
+                &#8801;
+            </section>
+            <nav class="MenuList">
+                <a href="index.html"> Home </a>
+                <a href="routes.html"> Routes </a>
+                <a href="gear.html"> Gear </a>
+                <a href="about.html"> About </a>
+            </nav>
+        </section>
+        <h1>Rock Routes</h1>
+    </header>
+
+    <main id="routeMain">
+
+        <form id="routesUserInput" class="padding">
+            <section class="rangeSearch">
+                <label for="climbingLevel"> climbing level</label>
+                <input type="range" max="13" min="1" id="climbingLevel" value=1>
+            </section>
+            <p id="climbingLevelIndicator"> max rock climbing difficulity = 1 </p>
+            <section class="rangeSearch">
+                <label for="bolderingLevel"> boldeing level</label>
+                <input type="range" max="20" min="1" id="bolderingLevel" value=1>
+            </section>
+            <p id="bolderingLevelIndicator"> max bouldering difficulity = VB </p>
+            <section class="climbingTypeInput">
+                <label for="all">all</label>
+                <input type="radio" name="climbingStyle" id="all">
+                <label for="rockClimbing">rock climbing</label>
+                <input type="radio" name="climbingStyle" id="rockClimbing">
+                <label for="bouldering"> boldering </label>
+                <input type="radio" name="climbingStyle" id="bouldering">
+            </section>
+        </form>
+
+        <p id="routeAbout">
+            these are some populate routes in America, if you click on them it will give you there current weather
+        </p>
+
+        <!--bellow is needed as is the anchor point for the java script content -->
+        <section id="routeContainer">
+
+        </section>
+
+    </main>
+
+</body>
